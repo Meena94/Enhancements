@@ -1,0 +1,46 @@
+<div ng-include = "'views/secondnav.html'"></div>
+<div class="options">
+  <!-- <div class="content" id="content" > -->
+    <div class="container">
+      <div class="jumbotron">
+        <h4>Production Current Status</h4><hr class="header-style"/>
+        <p><b>The following grid shows the status of files.</b></p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Feed</th>
+                <th>Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i>Total No of Channels</i></td>
+                <td><i>{{activecount}}</i></td>
+              </tr>
+              <tr>
+                <td><i>Sent Files</i></td>
+                <td><i>{{sftpcount}}</i></td>
+              </tr>
+              <!-- <tr>
+                <td><i>Groups in Active State</i></td>
+                <td><i></i></td>
+              </tr> -->
+              <tr>
+                <td><i>Total XML's Recieved</i></td>
+                <td><i>{{sftpcount}}</i></td>
+              </tr>
+              <tr>
+                <td><i>Total Outbounds Generated</i></td>
+                <td><i>{{sftpcount}}</i></td>
+              </tr>
+            </tbody>
+          </table>
+          <p><button type="button" class="btn  btn-info" data-toggle="modal" data-target="#myModal">View All Groups</button>
+            <button type="button" class="btn  btn-info" data-toggle="modal" data-target="#myModal" ng-click="getsentGroups()">View Sent Groups</button>
+            <button type="button" class="btn  btn-info" data-toggle="modal" data-target="#myModal" ng-click="getnotsentGroups()">View Not Send Groups</button>
+          </p>
+
+        </div>
+      </div>
+  <!-- </div> -->
+</div>

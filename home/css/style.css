@@ -1,0 +1,128 @@
+* { margin: 0; padding: 0 }
+html { height: 100%;}/*overflow:hidden;*/
+body.home-page {
+  background-image : url("../images/index.jpg");
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size : cover;
+}
+.login-page{
+  /*background-image : url("../images/light-blue.jpg");
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size : cover;*/
+  background-color: #eef7fb;
+}
+.control-label{
+  color: #000000;
+}
+.home-html{
+  float: left;
+  position:fixed;
+  top:25%;
+  width:70%;
+}
+.sort-icon {
+    font-size: 9px;
+    margin-left: 5px;
+}
+
+th {
+    cursor:pointer;
+}
+.thumbnail{
+  padding: 5px;
+  border: solid 1px #EFEFEF;
+
+}
+.thumbnail:hover {
+
+    border: solid 1px #CCC;
+   -moz-box-shadow: 1px 1px 5px #999;
+   -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+    cursor:pointer;
+
+}
+.Vlabs{
+  float: right;
+  margin-top:5%;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{background-color:  #66BCDD}
+.nav>li>a:focus, .nav>li>a:hover{background-color:  #66BCDD }
+.menu-icon{
+  height : 50px;
+  width : 50px;
+  cursor:pointer;
+}
+/*.btn{
+  background-color: #66BCDD;
+  color : white;
+}*/
+.content{
+  margin-top: 2%;
+}
+.navbar{
+  background-color:#66BCDD;
+}
+ .header-style{
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #5FBAD1 inset;
+}
+.secondnav{
+	margin-top:61px;
+}
+.table {
+    border-radius: 5px;
+    width: 50%;
+    float: none;
+
+}
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	background-color:#fff;
+	filter: alpha(opacity=0);
+}
+#upload_prev {
+	border:thin solid #000;
+	width: 65%;
+	padding:0.5em 1em 1.5em 1em;
+}
+
+#upload_prev span {
+    display: flex;
+	padding: 0 5px;
+	font-size:12px;
+}
+
+p.close {
+    /*margin: 0 5px 0 5px;*/
+    cursor: pointer;
+	padding-bottom:0;
+}
+#sftptble{
+  margin: 0 auto;
+}
+/*.table-responsive {height:180px;}*/
+.footer{
+  height: 5%;
+  text-align: center;
+  background-color:#66BCDD; /*#448aff;*/
+  padding: 5px;
+}
+.has-error{
+  color : #d9534f;
+}

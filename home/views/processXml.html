@@ -1,0 +1,78 @@
+<div ng-include = "'views/secondnav.html'"></div>
+<div class="container">
+  <div class="row" style="margin-top:5%;">
+        <div class=" jumbotron col-xs-6">
+          <div class="col-sm-6 col-md-6" >
+            <div class="thumbnail">
+
+              <div class="caption">
+                <h4>Upload JSON to Create Channel</h4>
+
+                  <button type="submit" class="btn btn-primary" onclick="showhide('uniquename');"><b>Upload JSON<b></button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail " >
+
+              <div class="caption">
+                <h4>Upload XML to Generate 834 Report</h4>
+
+                <button type="submit" class="btn btn-primary" onclick="showhide('uniquename');"><b>Upload XML<b></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+
+              <div class="caption">
+                <h4>View 834 Report</h4>
+
+                <button type="submit" class="btn btn-primary" onclick="showhide('uniquename');"><b>View 834<b></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+
+                <div class="thumbnail">
+
+                  <div class="caption">
+                    <h4>Send Files to Carrier</h4>
+
+                    <button type="submit" class="btn btn-primary" onclick="showhide('uniquename');"><b>Send File<b></button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-xs-6">
+          <div  style="height:400px;"class="thumbnail">
+
+            <div class="jumbotron" ><h4 class="text">Drop files here</h4>
+              <div style="display:none;" id="uniquename">
+
+                <form id = "uploadForm" enctype="multipart/form-data" action="/api/photo" method="post">
+                  <!-- <div style="position:relative;">
+		                  <a class='btn btn-primary' href='javascript:;'>
+			                     Choose File...
+			                     <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());' multiple />
+		                  </a>
+		                  &nbsp;
+		              <span class='label label-info' id="upload-file-info"></span><br><br>
+                  <button type="submit" class="btn btn-primary" style=''><b>Upload Files<b></button>
+	             </div> -->
+               <div class="fileUpload btn btn-primary">
+                 <span>Browse</span>
+                 <input id="uploadBtn" type="file" class="upload" multiple="multiple" name="browsefile"/>
+               </div>
+               <div class ="well" id="upload_prev"></div>
+                </form>
+
+
+              </div>
+            </div>
+
+         </div>
+        </div>
+    </div>
+</div>
